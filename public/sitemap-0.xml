@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>https://obinna-portfolio.vercel.app</loc><lastmod>2026-08-19T21:22:29.424Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://obinna-portfolio.vercel.app/about</loc><lastmod>2026-08-19T21:22:29.426Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://obinna-portfolio.vercel.app/certifications</loc><lastmod>2026-08-19T21:22:29.426Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://obinna-portfolio.vercel.app/contact</loc><lastmod>2026-08-19T21:22:29.426Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://obinna-portfolio.vercel.app/projects</loc><lastmod>2026-08-19T21:22:29.426Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://obinna-portfolio.vercel.app/projects/aeroguard-ci</loc><lastmod>2026-08-19T21:22:29.426Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://obinna-portfolio.vercel.app/projects/aurel</loc><lastmod>2026-08-19T21:22:29.426Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://obinna-portfolio.vercel.app/projects/campus-navigation</loc><lastmod>2026-08-19T21:22:29.426Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://obinna-portfolio.vercel.app/projects/guardian-ai</loc><lastmod>2026-08-19T21:22:29.426Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://obinna-portfolio.vercel.app/projects/hostel-marketplace</loc><lastmod>2026-08-19T21:22:29.426Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://obinna-portfolio.vercel.app/projects/lucid</loc><lastmod>2026-08-19T21:22:29.426Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://obinna-portfolio.vercel.app/projects/mastery-tsrlearning</loc><lastmod>2026-08-19T21:22:29.426Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://obinna-portfolio.vercel.app/projects/netguard-soc</loc><lastmod>2026-08-19T21:22:29.426Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://obinna-portfolio.vercel.app/skills</loc><lastmod>2026-08-19T21:22:29.426Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+</urlset>

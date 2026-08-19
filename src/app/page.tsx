@@ -1,69 +1,126 @@
-import Image from "next/image";
+import { HomeHero } from "@/components/sections/HomeHero";
+import { ProjectCard } from "@/components/ui/ProjectCard";
+import { projects } from "@/content/projects";
+import { skillGroups } from "@/content/skills";
+import { Button } from "@/components/ui/Button";
+import Link from "next/link";
+import { PageTransition } from "@/components/layout/PageTransition";
 
 export default function Home() {
+  const featuredProjects = projects.filter((p) => p.featured);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
+    <PageTransition>
+      <div className="flex flex-col gap-32 pb-24">
+        <HomeHero />
+
+        {/* Featured Projects Section */}
+        <section className="container mx-auto px-4 max-w-7xl">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
+                Selected Work
+              </h2>
+              <p className="text-text-muted max-w-xl">
+                A showcase of my most complex engineering projects, combining AI models, full-stack architecture, and real-world impact.
+              </p>
+            </div>
+            <Button asChild variant="outline" size="sm" className="shrink-0">
+              <Link href="/projects">View All Projects →</Link>
+            </Button>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {featuredProjects.map((project) => (
+              <ProjectCard key={project.slug} project={project} />
+            ))}
+          </div>
+        </section>
+
+        {/* Skills Teaser */}
+        <section className="container mx-auto px-4 max-w-7xl">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-display font-bold mb-3">
+                Technical Toolkit
+              </h2>
+              <p className="text-text-muted max-w-xl">
+                The languages, frameworks, and tools I use to bring ideas to production.
+              </p>
+            </div>
+            <Button asChild variant="outline" size="sm" className="shrink-0 self-start sm:self-auto">
+              <Link href="/skills">View All Skills →</Link>
+            </Button>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {skillGroups.slice(0, 6).map((group) => (
+              <div
+                key={group.category}
+                className="p-6 rounded-2xl bg-surface border border-border hover:border-accent/30 transition-colors duration-300"
+              >
+                <h3 className="text-xs font-bold uppercase tracking-widest text-accent mb-4">
+                  {group.category}
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {group.skills.map((skill) => (
+                    <span
+                      key={skill.name}
+                      className={[
+                        "inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium border transition-colors",
+                        skill.tier === "comfortable"
+                          ? "bg-accent/10 border-accent/20 text-text-primary"
+                          : skill.tier === "working-knowledge"
+                          ? "bg-surface-hover border-border text-text-muted"
+                          : "bg-transparent border-border/50 text-text-muted/60",
+                      ].join(" ")}
+                    >
+                      {skill.tier === "comfortable" && (
+                        <span className="w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
+                      )}
+                      {skill.name}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Legend */}
+          <div className="flex items-center gap-6 mt-6 px-1">
+            <span className="flex items-center gap-2 text-xs text-text-muted">
+              <span className="w-2 h-2 rounded-full bg-accent" />
+              Comfortable
+            </span>
+            <span className="flex items-center gap-2 text-xs text-text-muted">
+              <span className="w-2 h-2 rounded-full bg-border" />
+              Working knowledge
+            </span>
+            <span className="flex items-center gap-2 text-xs text-text-muted">
+              <span className="w-2 h-2 rounded-full bg-border/40" />
               Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+            </span>
+          </div>
+        </section>
+
+        {/* Contact CTA Banner */}
+        <section className="container mx-auto px-4 max-w-7xl">
+          <div className="bg-accent/10 border border-accent/20 rounded-3xl p-8 md:p-16 text-center relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent pointer-events-none" />
+            <div className="relative z-10 max-w-2xl mx-auto">
+              <h2 className="text-3xl md:text-5xl font-display font-bold mb-6 text-balance">
+                Let's build something <span className="text-accent">together.</span>
+              </h2>
+              <p className="text-text-muted text-lg mb-8">
+                I'm currently open to internships and junior roles where I can contribute to meaningful engineering challenges.
+              </p>
+              <Button asChild variant="accent" size="lg">
+                <Link href="/contact">Get in Touch</Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </PageTransition>
   );
 }

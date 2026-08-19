@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://obinna-portfolio.vercel.app
+
+# Sitemaps
+Sitemap: https://obinna-portfolio.vercel.app/sitemap.xml
