@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/Button";
 import { DeskSceneLoader } from "@/components/3d/DeskSceneLoader";
 import { personal } from "@/content/personal";
 import Link from "next/link";
-import { MapPin, Briefcase } from "lucide-react";
+import { MapPin } from "lucide-react";
 
 export function HomeHero() {
   return (
@@ -69,10 +69,6 @@ export function HomeHero() {
             <div className="flex items-center gap-2">
               <MapPin className="w-4 h-4" />
               {personal.location}
-            </div>
-            <div className="flex items-center gap-2">
-              <Briefcase className="w-4 h-4" />
-              Graduating {personal.education[0].date.split(" ").pop()}
             </div>
           </motion.div>
         </div>
