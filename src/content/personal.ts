@@ -8,8 +8,8 @@ export const personal = {
   email: "obinnaokeke15@yahoo.com", // TODO: Obinna add real email
   whatsapp: +2347040896864, // TODO: Obinna add real number or link
   github: "https://github.com/trapzobinna", // TODO: Obinna add real github
-  linkedin: "www.linkedin.com/in/obinna-okeke-48b6632b7",
-  resumeFilename: "/public/obinnaokekecv.pdf", // expected in /public/resume.pdf
+  linkedin: "https://www.linkedin.com/in/obinna-okeke-48b6632b7",
+  resumeFilename: "obinnaokekecv.pdf", // in /public/obinnaokekecv.pdf
   
   bioShort: "I build full-stack AI-assisted products end-to-end.BSc Computer Science graduate First Class Honours specializing in applied deep learning for cybersecurity and modern web architectures.",
   

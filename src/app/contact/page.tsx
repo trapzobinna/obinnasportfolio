@@ -143,7 +143,12 @@ export default function ContactPage() {
             {personal.resumeFilename && (
               <div className="pt-4">
                 <Button asChild variant="outline" size="lg" className="w-full">
-                  <a href={`/${personal.resumeFilename}`} download>
+                  <a
+                    href={`/${personal.resumeFilename.replace(/^\/+/, "")}`}
+                    download="Obinna_Okeke_CV.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Download Résumé
                   </a>
                 </Button>

@@ -52,8 +52,10 @@ export function Footer() {
 
         <div className="flex items-center">
           <a
-            href={`/${personal.resumeFilename}`}
-            download
+            href="/obinnaokekecv.pdf"
+            download="Obinna_Okeke_CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-sm font-medium border border-border px-4 py-2 rounded-full hover:border-accent hover:text-accent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           >
             Download Résumé

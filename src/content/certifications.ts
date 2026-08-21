@@ -58,7 +58,7 @@ export const certifications: Certification[] = [
     featured: false
   },
   {
-    name: "IBM SkillsBuild - Cybersecurity",
+    name: "IBM SkillsBuild - Cybersecurity Fundamentals",
     issuer: "IBM",
     verifyUrl: null,
     image: "/certificates/ibmcybersec.jpeg",
