@@ -32,7 +32,7 @@ export const skillGroups: SkillGroup[] = [
     category: "AI/ML",
     skills: [
       { name: "Prompt Engineering", tier: "comfortable" },
-      { name: "Agentic Workflows (Antigravity)", tier: "comfortable" },
+      { name: "Agentic Workflows", tier: "comfortable" },
       { name: "Claude API", tier: "working-knowledge" },
       { name: "Gemini API", tier: "working-knowledge" },
       { name: "DistilBERT", tier: "working-knowledge" },
