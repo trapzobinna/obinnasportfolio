@@ -11,15 +11,15 @@ export const personal = {
   linkedin: "www.linkedin.com/in/obinna-okeke-48b6632b7",
   resumeFilename: "/public/obinnaokekecv.pdf", // expected in /public/resume.pdf
   
-  bioShort: "I build full-stack AI-assisted products end-to-end.BSc Computer Science graduate (First Class) specializing in applied deep learning for cybersecurity and modern web architectures.",
+  bioShort: "I build full-stack AI-assisted products end-to-end.BSc Computer Science graduate First Class Honours specializing in applied deep learning for cybersecurity and modern web architectures.",
   
-  bioLong: "I am a Computer Science graduate from Caleb University with a First Class Honours degree. My work bridges the gap between complex AI models and user-facing applications. I build full-stack systems—from crafting fine-tuned models like Guardian AI (a DistilBERT + BiLSTM phishing detection system) to developing the front-end interfaces that make them accessible. I focus on writing clean, scalable code and leverage agentic workflows to accelerate development without compromising on quality.",
+  bioLong: "I am a Computer Science graduate from Caleb University with a First Class Honours degree. My work bridges the gap between complex AI models and user-facing applications. I build full-stack systems from crafting fine-tuned models to developing the front-end interfaces that make them accessible. I focus on writing clean, scalable code and leverage agentic workflows to accelerate development without compromising on quality.",
 
   education: [
     {
       title: "BSc Computer Science",
       organization: "Caleb University, Imota-Lagos",
-      date: "January 2027",
+      date: "2027",
       description: "First Class Honours.",
       type: "education" as const
     }
@@ -29,9 +29,8 @@ export const personal = {
     {
       title: "IT Student / Tech Instructor",
       organization: "CVhub4Africa",
-      date: "May 2023 – October 2023",
+      date: "May 2025 – October 2025",
       bullets: [
-        // TODO: Obinna verify/edit these real placeholder bullets
         "Taught technology fundamentals and programming basics to students, ensuring high engagement and comprehension.",
         "Provided technical support and assisted in the maintenance of IT infrastructure.",
         "Developed instructional materials and guided hands-on coding sessions."
@@ -47,7 +46,7 @@ export const personal = {
     },
     {
       step: "2. Agentic Build",
-      description: "I leverage agentic AI tools (like Antigravity) to scaffold and draft the heavy lifting, acting as the architect."
+      description: "I leverage agentic tools to scaffold and draft the heavy lifting, acting as the architect."
     },
     {
       step: "3. Review & Refine",
@@ -60,7 +59,7 @@ export const personal = {
   ],
 
   offDuty: [
-    "Analyzing football tactics and optimizing Football Manager systems.",
-    "Following streetwear culture and design trends."
+    "Seeking constant self-improvement physically and mentally.",
+    "Following latest trends and updates on the tech space and areas of interest."
   ]
 };

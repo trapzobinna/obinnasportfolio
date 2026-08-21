@@ -29,6 +29,7 @@ export interface Certification {
   name: string;
   issuer: string;
   verifyUrl: string | null;
+  image?: string | null; // path to certificate image in /public/certificates/
   featured?: boolean;
 }
 
