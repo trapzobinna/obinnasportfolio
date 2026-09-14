@@ -22,7 +22,7 @@ export default function Home() {
                 Selected Work
               </h2>
               <p className="text-text-muted max-w-xl">
-                A showcase of my most complex engineering projects, combining AI models, full-stack architecture, and real-world impact.
+                A showcase of my most complex projects, combining AI models, full-stack architecture, and real-world impact.
               </p>
             </div>
             <Button asChild variant="outline" size="sm" className="shrink-0">
@@ -42,7 +42,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
             <div>
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-3">
-                Technical Toolkit
+                Arsenal
               </h2>
               <p className="text-text-muted max-w-xl">
                 The languages, frameworks, and tools I use to bring ideas to production.

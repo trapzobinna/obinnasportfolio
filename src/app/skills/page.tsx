@@ -28,7 +28,7 @@ export default function SkillsPage() {
 
         <div className="mb-12">
           <h1 className="text-4xl md:text-5xl font-display font-bold mb-4 tracking-tight">
-            Technical Toolkit
+            Arsenal
           </h1>
           <p className="text-lg text-text-muted max-w-2xl">
             A structured breakdown of my capabilities across languages, frameworks, AI systems, and tools.

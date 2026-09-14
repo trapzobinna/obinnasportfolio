@@ -82,7 +82,7 @@ export const certifications: Certification[] = [
     name: "IBM SkillsBuild - AI Fundamentals",
     issuer: "IBM",
     verifyUrl: null, // or add your link like "https://..."
-    image: null,
+    image: "/certificates/aifundamentals.jpeg",
     featured: false
   }
 ];
